@@ -1,0 +1,45 @@
+.UsersListMeLiked
+  &-Item
+    margin-top: 19px
+    margin-bottom: 19px
+  &-List
+    width: 100%
+    background: #f6f7fb
+    margin: 0
+    overflow: hidden
+    list-style: none
+    padding: 0
+    &Wrapper
+      display: flex
+      justify-content: center
+      margin: auto
+      max-width: 350px
+      &Bg
+        min-height: 200px
+        background: var(--background_page)
+
+@media all and (max-width: 400px)
+  .UsersListMeLiked
+    &-List
+      &Wrapper
+        &Bg
+          padding: 0px 20px
+
+@media all and (max-width: 344px)
+  .UserItemMeLiked
+    &-Avatar
+      width: 45px !important
+      height: 45px !important
+    &-AdditionalInfo, &-Time
+      font-size: 12px !important
+  .TwoImages
+    &-One, &-Two
+      width: 47px !important
+      height: 47px !important
+
+@media all and (min-width: 320px)
+  .TwoImages
+    &-One, &-Two
+      width: 52px !important
+      height: 52px !important
+

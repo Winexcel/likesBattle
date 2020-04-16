@@ -1,0 +1,97 @@
+.PayedLikes
+  position: relative
+  display: flex
+  justify-content: center
+  height: 98px
+  width: 100%
+  background: linear-gradient(180deg, #f24b76 0%, #FB4E5F 100%)
+  border-top: 1px solid #f55e86
+  color: #fff
+  &-Counter
+    position: relative
+    flex-grow: 1
+    margin-left: 48px
+    margin-right: 37px
+    margin-top: 19px
+    max-width: 400px
+    &Number
+      display: block
+      font-size: 36px
+      font-weight: 500
+      margin: 0
+    &Text
+      position: relative
+      display: inline-block
+      cursor: pointer
+      margin-top: 4px
+      padding-bottom: 1px
+      border-bottom: 1px solid #FFF
+      &::before
+        content: ''
+        display: block
+        width: 20px
+        height: 27px
+        width: 120%
+        position: absolute
+        transform: translate(0px, -6px)
+  &-Benefits
+    //margin-bottom: 27px
+  &-LikesCount
+    display: inline-block
+    margin: 0
+    margin-top: 12px
+    font-size: 40px
+    font-weight: 500
+  &-ButtonRefresh
+    position: absolute
+    right: 0
+    top: 0
+  &-Tabs
+    margin-bottom: 23px
+
+.Benefits
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: #fff
+  height: 68px
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    background: transparent
+    width: 1px
+    height: 1px
+    bottom: 0
+    transform: translateX(-100%) translateY(50%) rotate(45deg)
+    border: 10px solid #fff
+    border-top: 10px solid transparent
+    border-left: 10px solid transparent
+    left: 50%
+  &-And
+    display: inline-block
+    align-self: center
+    color: #F44B77
+    opacity: .1
+    font-size: 40px
+    font-weight: 500
+  &-Item
+    display: inline-block
+    color: #575757
+    font-size: 14px
+    vertical-align: middle
+    text-align: center
+    flex-grow: 1
+    line-height: 18px
+  &Bigger
+    flex-grow: 2
+
+//@media all and (max-width : 320px)
+//  .Benefits-And
+//    font-size: 29px
+//    margin-left: 0
+//  .Benefits-Item
+//    font-size: 13px
+//  .PayedLikes-LikesCount
+//    font-size: 30px

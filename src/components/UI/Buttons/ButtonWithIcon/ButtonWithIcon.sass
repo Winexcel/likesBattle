@@ -1,0 +1,232 @@
+.Button
+  &WithIcon
+    cursor: pointer
+    transition: all .3s
+    height: 100%
+    border: none
+    outline: none
+    padding: 0 17px
+    font-size: 12px
+    font-weight: 500
+    border-radius: 1px
+  &Battle
+    color: #fff
+    background: #f96f7f
+    &_big
+      font-size: 16px
+      padding: 0px 33px
+      &:after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        margin-left: 9px
+        width: 27px
+        height: 23px
+        background-image: url(../../../../files/icons/icon-battle.svg)
+        background-size: 27px 23px
+        background-position: center
+        background-repeat: no-repeat
+  &Ok
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: text-bottom
+      margin-left: 9px
+      width: 19px
+      height: 15px
+      background-image: url(../../../../files/icons/check.svg)
+      background-size: 19px 15px
+      background-position: center
+      background-repeat: no-repeat
+  &RefreshInternet
+    color: #fff
+    background: #f96f7f
+    &_big
+      font-size: 16px
+      padding: 0px 33px
+      &:after
+    &:active
+      background: #f95f6e
+
+  &Open
+    color: #fff
+    background: #f96f7f
+    &:active
+      background: #f9656f
+      background-image: inherit
+      background-position: center
+      background-repeat: no-repeat
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-left: 9px
+      width: 13px
+      height: 18px
+      background-image: url(../../../../files/icons/locked.svg)
+      background-position: center
+      background-repeat: no-repeat
+    &_big
+      font-size: 16px
+      padding: 0px 33px
+      &:after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        margin-left: 9px
+        width: 20px
+        height: 26px
+        background-image: url(../../../../files/icons/locked.svg)
+        background-size: 20px 26px
+        background-position: center
+        background-repeat: no-repeat
+
+  &Go
+    color: #535353
+    background: #fdfefe
+    &VK
+      display: inline-block
+      position: relative
+      vertical-align: middle
+      line-height: 42px
+      height: 42px
+      border: none
+      outline: none
+      background: #fff
+      padding-left: 76px
+      padding-right: 44px
+      text-align: center
+      border-radius: 7px
+      color: #575757
+      &:before
+        content: ''
+        display: inline-flex
+        position: absolute
+        justify-content: center
+        align-items: center
+        left: 0
+        border-radius: 7px 0px 0px 7px
+        vertical-align: middle
+        height: 42px
+        width: 57px
+        background: green
+        background: url("../../../../files/icons/icon-vk.svg"), linear-gradient(180deg, #ED4991 0%, #FB4E5F 100%)
+        background-repeat: no-repeat
+        background-position: center center
+      &:after
+        content: ''
+        display: inline-flex
+        position: absolute
+        right: 0
+        height: 100%
+        width: 9px
+        background-image: url(../../../../files/icons/go.svg)
+        background-position: center
+        background-repeat: no-repeat
+        margin-right: 18px
+    &:active
+      background: rgba(#837f85, 0.01)
+      background-image: inherit
+      background-position: center
+      background-repeat: no-repeat
+    &Line
+        color: #535353
+        background: #fdfefe
+        width: 107px
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-left: 14px
+      width: 9px
+      height: 12px
+      background-image: url(../../../../files/icons/go.svg)
+      background-position: center
+      background-repeat: no-repeat
+  &Anonim
+    padding-left: 57px
+    padding-right: 0
+    &:before
+      background: url("../../../../files/icons/icon-anonim.svg"), linear-gradient(180deg, rgba(82, 82, 82, 0.95) 0%, rgba(22, 22, 22, 0.95) 100%)
+      background-repeat: no-repeat
+      background-position: center center
+      margin-right: 0
+    &:after
+      display: none
+
+  &Refresh
+    width: 56px
+    height: 56px
+    border-radius: 50%
+    border: none
+    outline: none
+    background: #fff
+    background-image: url(../../../../files/icons/refresh-button.svg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 60% 60%
+    transition: all .2s
+    cursor: pointer
+    &:active
+      background: #ffdfda
+      background-image: url(../../../../files/icons/refresh-button.svg)
+      background-position: center
+      background-repeat: no-repeat
+      background-size: 60% 60%
+      transform: rotate(-360deg)
+  &Quest
+    font-size: 14px
+    color: #fff
+    text-align: center
+    border: none
+    outline: none
+    background: rgba(#FA4E60, .8)
+    padding: 13px 18px
+    border-radius: 1px
+    &:active
+      background: #f9656f
+      background-image: inherit
+      background-position: center
+      background-repeat: no-repeat
+  &Buy
+    height: 45px
+    margin-top: 19px
+    vertical-align: bottom
+    color: #fff
+    border: none
+    outline: none
+    background: #f9707f
+    padding: 12px 41px
+    font-weight: 500
+    font-size: 16px
+    box-sizing: border-box
+    transition: all .2s
+    &:active
+      background: #f9656f
+      background-image: inherit
+      background-position: center
+      background-repeat: no-repeat
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-left: 10px
+      width: 28px
+      height: 24px
+      background-image: url(../../../../files/icons/likes-buy.svg)
+      background-position: center
+      background-repeat: no-repeat
+    &2
+      position: absolute
+      right: 0
+      padding-left: 18px
+      padding-right: 18px
+      margin-top: 9px
+    &_noicone
+      &:after
+        display: none
+
+
+@media all and (max-width: 346px)
+  .ButtonGoLine
+    width: 70px

@@ -1,0 +1,232 @@
+.Gallery__slide
+  position: relative !important
+.Swiper
+  &-Slide
+    position: relative
+    width: 40vh !important
+    background: red
+    border-radius: 5px
+.swiper-container
+  height: 100% !important
+.Profile
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 24px 28px 24px
+  &-Swiper
+    height: 40vh
+  &-PreloaderBig
+    margin-top: -24px
+  &-ProfileIsPrivate
+    margin-top: 47px
+  &-ButtonGoVK
+    width: 100%
+  &-Gallery
+    overflow: hidden
+    margin-top: 10px
+  &-Row
+    width: 100%
+    max-width: 321px
+    min-width: 321px
+  &-Overall
+    margin-bottom: 21px
+  &-Info
+    display: inline-block
+    vertical-align: top
+    margin-left: 21px
+    width: 204px
+  &-Avatar
+    display: inline-block
+    width: 96px
+    height: 96px
+    &Img
+      width: 96px
+      height: 96px
+      object-fit: cover
+      border-radius: 50%
+      border: 1px solid #fff
+  &-Name
+    color: #575757
+    font-weight: 500
+    font-size: 20px
+    margin-top: 6px
+    margin-bottom: 8px
+  &-Status
+    font-weight: 300
+    font-size: 13px
+    color: #7E7E7E
+    margin-bottom: 10px
+    margin-left: 2px
+  &-Tumbler
+    display: inline-flex
+    align-items: center
+    height: 42px
+    background: #FFFFFF
+    border-radius: 7px
+    padding: 0px 16px
+    transform: translateX(-15px)
+    box-sizing: border-box
+    width: 217px
+    position: absolute
+    &AboutAnonim
+      display: block
+      position: absolute
+      height: 100%
+      background: green
+      right: 0
+      width: 70px
+      opacity: 0
+      z-index: 10
+    &NoPadding
+      padding: 0
+    &Question
+      font-size: 10px
+      color: #575757
+      z-index: 10
+      line-height: 13px
+      &Wrapper
+        display: inline-block
+        border-radius: 50%
+        width: 13px
+        height: 13px
+        background: #F3F3F3
+        //margin-right: 46px
+        transform: translate(2px,-5px)
+    &Switcher
+      display: inline-block
+      position: absolute
+      right: 0
+      top: 10px
+      transform: translateX(-10px)
+      cursor: pointer
+    &Text
+      font-weight: normal
+      font-size: 14px
+      color: #575757
+      text-decoration: underline
+      cursor: pointer
+      height: 100%
+      line-height: 42px
+      text-align: center
+      &:before
+        content: ''
+        position: absolute
+        width: 128px
+        height: 100%
+        background: none
+        transform: translateX(-14px)
+        z-index: 10
+
+.PhotoInfo
+  position: relative
+  min-width: 300px
+  max-width: 317px
+  height: 53px
+  background: #FFFFFF
+  border-radius: 5px
+  line-height: 53px
+  padding: 0 24px
+  box-sizing: border-box
+  margin: auto
+  &-Text
+    color: #575757
+  &-Count
+   position: absolute
+   right: 0
+   margin-right: 24px
+   font-size: 14px
+   font-weight: 500
+   color: #575757
+   &:before
+     content: ''
+     display: inline-block
+     vertical-align: middle
+     width: 33px
+     height: 47px
+     background: #000
+     border-radius: 50%
+     background: url('../../files/icons/ilikes-red.svg')
+     background-repeat: no-repeat
+     background-size: 26px 15px
+     background-position: center center
+
+
+.Stats
+  display: flex
+  background: #fff
+  justify-content: space-between
+  border-radius: 12px
+  padding: 17px 0px
+  &:after, &:before
+    content: ''
+    display: block
+
+  &-Item
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 0px
+    &Count
+      color: #575757
+      font-size: 16px
+      font-weight: 500
+      margin-bottom: 5px
+    &Text
+      color: #575757
+      font-size: 12px
+
+.Gallery
+  &-ImgError
+    background-color: #fff
+    background-image: url(../../files/icons/img-error.svg)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 50%
+  &-Container
+    display: flex
+    position: relative
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    & > *
+      width: 95%
+      height: 95%
+      border-radius: 5px
+    & > .BattleUser-Like
+      width: 45px
+      height: 40px
+
+.Gallery__slide
+  display: flex
+  justify-content: center
+  align-items: center
+
+.Switch--android .Switch__self:checked + .Switch__pseudo::before
+  background: #fff !important
+
+.Switch--android .Switch__self:checked + .Switch__pseudo
+  background: #F9707F !important
+.Switch--ios .Switch__self:checked + .Switch__pseudo
+  border-color: #F9707F !important
+  border-color: #F9707F !important
+  border-color: var(--accent)
+  background: #F9707F !important
+  background: #F9707F !important
+  background: var(--accent)
+
+@media (max-width: 340px)
+  .Profile
+    padding: 18px 28px 0px
+    &-Row
+      transform: scale(0.95)
+    &-Overall
+      margin-bottom: 15px
+
+@media (max-width: 320px)
+  .Profile
+    padding: 15px 28px 0px
+    &-Row
+      transform: scale(0.91)
+    &-Overall
+      margin-bottom: 10px

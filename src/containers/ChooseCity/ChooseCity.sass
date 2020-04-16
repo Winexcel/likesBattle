@@ -1,0 +1,48 @@
+.ChooseCity
+  position: relative
+  padding: 20px 10px
+  &-CitiesList
+    margin-left: 28px
+    margin-right: 28px
+    margin-top: 31px
+  &-Input
+    position: relative
+    width: 100%
+    padding-right: 20px
+    &Clear
+      display: inline-block
+      width: 40px
+      height: 40px
+      position: absolute
+      top: 0
+      right: 0
+      border: none
+      background: none
+      background-image: url(../../files/icons/icon-input-clear.svg)
+      background-position: center center
+      background-repeat: no-repeat
+      transform: translate(-8px, 1px)
+      &Padding
+        padding-right: 50px !important
+    &Wrapper
+      position: relative
+      &:focus-within > .ChooseCity-InputClear
+        cursor: pointer
+        outline: none
+        background-image: url(../../files/icons/icon-input-clear_active.svg)
+
+.CitiesList
+  &-Item
+    cursor: pointer
+    margin-top: 34px
+    &:first-child
+      margin-top: 0
+    &Name
+      font-size: 16px
+      color: #535353
+      &_bold
+        font-weight: 500
+    &Region
+      margin-top: 7px
+      font-size: 14px
+      color: #B3A7B6

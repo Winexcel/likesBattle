@@ -1,0 +1,116 @@
+.QuestItem
+  position: relative
+  margin-bottom: 14px
+  padding-top: 36px
+  //height: 36px
+  background: #FFFFFF
+  border-radius: 3px 3px 3px 0px
+  overflow: hidden
+  &-TimeLeft
+    display: inline-block
+    margin-top: 18px
+    margin-left: 8px
+    background: #f5f5f5
+    padding: 7px 12px
+    border-radius: 5px
+    color: #000
+    font-size: 14px
+    &Medium
+      color: #575757
+      font-weight: 500
+  &-CurrentStep
+    display: block
+    font-size: 15px
+    font-weight: 500
+    color: #575757
+    margin-top: 6px
+    margin-bottom: 7px
+    margin-left: 90px
+  &-NextStep
+    display: block
+    font-size: 13px
+    color: black
+    margin-left: 90px
+  &-Button
+    &NextStep
+      display: block
+      margin-left: 90px
+      margin-top: 20px
+  &-Pie
+    display: inline-flex
+    width: 69px
+    height: 69px
+    align-items: center
+    justify-content: center
+    float: left
+    &Substrate
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      width: 89%
+      height: 89%
+      background: #fff
+      font-size: 13px
+      color: #575757
+      font-weight: 500
+  &-Body
+    background: #fff
+    padding: 21px 16px 27px
+    overflow: hidden
+  &-Name
+    //display: inline-block
+    display: block
+    left: 0
+    top: 0
+    position: absolute
+    height: 37px
+    transform: translateY(-1px)
+    line-height: 37px
+    text-align: center
+    background: rgba(#F9707F, 0.1)
+    border-radius: 0px 0px 3px 0px
+    color: #575757
+    font-weight: 500
+    font-size: 14px
+    width: 60%
+  &-Button
+    cursor: pointer
+    margin-left: 15px
+    padding: 0
+    border: none
+    outline: none
+    background: none
+    font-size: 14px
+    font-weight: 500
+    color: #575757
+    text-decoration: underline
+  &-Reward
+    width: 40%
+    //display: inline-block
+    display: block
+    right: 0
+    top: 0
+    height: 37px
+    position: absolute
+    text-align: center
+    line-height: 36px
+    color: #575757
+    font-size: 15px
+    font-weight: 500
+    vertical-align: middle
+    &:before
+      content: ''
+      vertical-align: middle
+      transform: translateY(-2px)
+      margin-right: 4px
+      display: inline-block
+      width: 20px
+      height: 20px
+      background-image: url(../../../files/icons/preloader-icon.svg)
+      background-position: center center
+      background-size: 20px
+      background-repeat: no-repeat
+
+.Pie
+  border-radius: 50%

@@ -1,0 +1,62 @@
+@import "../../files/fonts/stylesheet.css"
+
+body
+  font-family: 'Gotham Pro', sans-serif !important
+  font-weight: normal
+  color: #575757
+
+body *
+  font-family: 'Gotham Pro', sans-serif
+  user-select: none
+
+\:root
+  --header_background: #f44b76
+  --tabbar_height: 70px
+  --background_page: #f6f7fb
+
+.Tabbar, .Tabbar--android.Tabbar--shadow
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.08) !important
+
+.PanelHeader--ios .PanelHeader__left
+  flex-grow: 0
+
+.PanelHeader--ios .PanelHeader__content
+  margin-left: 0px
+
+.PanelHeader--android .PanelHeader-bg
+  box-shadow: none
+
+.PanelHeader--ios .PanelHeader-bg::after
+  display: none
+
+.Panel__in
+  padding-bottom: calc(70px + env(safe-area-inset-bottom)) !important
+
+.Tabbar--android.Tabbar--shadow
+  box-shadow: none
+
+.Tabbar:before
+  display: none
+
+.OverAllWrapper
+  display: block
+  width: 100%
+  height: 100vh
+
+.OverAllWrapper-Content
+  display: block
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0px
+  overflow: hidden
+  overflow-y: auto
+
+.Panel
+  color: black
+  background: red
+
+.AntiScroll
+  z-index: -1
+  position: fixed

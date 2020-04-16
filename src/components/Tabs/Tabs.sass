@@ -1,0 +1,33 @@
+.TabsLb
+  display: block
+  width: 308px
+  height: 50px
+  box-sizing: border-box
+  border: 1px solid #F9707F
+  border-radius: 5px
+  &-Body
+    display: flex
+    height: 100%
+    justify-content: center
+    align-items: stretch
+  &-Item
+    cursor: pointer
+    flex-grow: 1
+    text-align: center
+    line-height: 48px
+    color: #575757
+    background: #FFFFFF
+    border-radius: 2px
+    font-weight: 500
+    &_right
+      border-radius: 0px 4px 4px 0px
+    &_left
+      border-radius: 4px 0px 0px 4px
+    &_active
+      color: #FFFFFF
+      background: #F9707F
+      border-radius: 0px 0px 0px 0px
+      &Right
+        border-radius: 0px 3px 3px 0px
+      &Left
+        border-radius: 3px 0px 0px 3px

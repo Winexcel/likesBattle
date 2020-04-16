@@ -1,0 +1,78 @@
+.User
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  color: #fff
+  &-TopNumber
+    position: absolute
+    display: inline-block
+    transform: translateY(-35px)
+    font-weight: 500
+    color: #000000
+    box-sizing: border-box
+    text-align: center
+    line-height: 26px
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    &-1
+      background: #F6F962
+      box-shadow: inset 0px -3px 3px #FFDA19
+    &-2
+      transform: translateY(-35px) translatex(15px)
+      background: #DFDEE3
+      box-shadow: inset 0px -3px 3px rgba(166, 165, 173, 0.5)
+    &-3
+      transform: translateY(-35px) translateX(15px)
+      background: #FFBB75
+      box-shadow: inset 0px -3px 3px rgba(243, 139, 7, 0.5)
+  &-Name
+    font-size: 14px
+    margin-bottom: 4px
+    &Line
+      display: block
+      background: white
+      border-radius: 10px
+      width: 66px
+      height: 16px
+  &-LikesCount
+    font-size: 10px
+    color: #EDE0E0
+    &Line
+      display: inline-block
+      width: 50px
+      height: 11px
+      background: white
+      border-radius: 20px
+  &-Avatar
+    box-sizing: content-box
+    object-fit: cover
+    border: 9px solid rgba(255, 255, 255, .05)
+    border-radius: 50%
+    width: 86px
+    height: 86px
+    margin-bottom: 8px
+    &Small
+      width: 68px
+      height: 68px
+
+.Top
+  &3
+    display: flex
+    border-top: 1px solid #f55e86
+    background: linear-gradient(180deg, #f24b76 0%, #FB4E5F 100%)
+    justify-content: space-between
+    height: 187px
+    &:after, &:before
+      content: ''
+      display: block
+    &-User
+      justify-content: flex-end
+      margin-bottom: 30px
+
+.AntiScroll-Top
+  background: #f24b76
+  height: 300px
+  width: 100vw
+

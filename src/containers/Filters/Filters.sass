@@ -1,0 +1,137 @@
+.Filters
+  height: 100%
+  &-Age
+    margin-bottom: 20px
+    &Count
+      color: #575757
+      font-size: 14px
+  &-Input
+    &Wrapper
+      position: relative
+    &ArrowDown
+      cursor: pointer
+      display: inline-block
+      width: 11px
+      height: 11px
+      position: absolute
+      top: 0
+      right: 0
+      border: none
+      background: none
+      background: url(../../files/icons/select-arrow.svg) center no-repeat
+      background-position: center center
+      background-repeat: no-repeat
+      transform: translate(-22px, 16px)
+
+.Filter
+  &-Content
+    position: relative
+    &FlexRow
+      display: flex
+      justify-content: space-between
+      align-items: center
+  &-Header
+    display: block
+    font-size: 14px
+    color: #535353
+    font-weight: 500
+    margin-bottom: 19px
+    &Saved
+      color: #B3A7B6
+      font-size: 10px
+      font-weight: normal
+      margin-left: 15px
+      &None
+        opacity: 0
+      &Anim
+        animation: HeaderSaved 5s
+        animation-fill-mode: forwards
+  &-Control
+    padding: 20px 20px 40px
+    border-bottom: 1px solid #ECEDF0
+  &-Sex
+    margin-bottom: 29px
+    padding: 0
+    position: relative
+    display: block
+    outline: none
+    border: none
+    background: none
+    font-size: 13px
+    color: #828282
+    min-width: 87px
+    &Img
+      min-height: 87px
+    &Name
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      margin: auto
+      transform: translateY(30px)
+      text-align: center
+      width: 100%
+    &Male
+      width: 87px
+      height: 87px
+      background-image: url(../../files/icons/filter-man_inactive.svg)
+      background-position: center
+      background-repeat: no-repeat
+      &_active
+        background-image: url(../../files/icons/filter-man_active.svg)
+    &Female
+      width: 87px
+      height: 87px
+      background-image: url(../../files/icons/filter-girl_inactive.svg)
+      background-position: center
+      background-repeat: no-repeat
+      &_active
+        background-image: url(../../files/icons/filter-girl_active.svg)
+        background-position-y: 0px
+    &Both
+      width: 87px
+      height: 87px
+      background-image: url(../../files/icons/filter-both_inactive.svg)
+      background-position: center
+      background-repeat: no-repeat
+      &_active
+        background-image: url(../../files/icons/filter-both_active.svg)
+  &-Input
+    box-sizing: border-box
+    width: 100%
+    &Arrow
+      position: absolute
+      margin-top: 16px
+      transform: translateX(-39px)
+
+.Input
+  border: none
+  border-radius: 6px
+  outline: none
+  font-size: 15px
+  &::placeholder
+    color: #B3A7B6
+  &_city
+    border: 1px solid #F6F7FB
+    padding-right: 53px
+    padding-left: 26px
+    padding-top: 16px
+    padding-bottom: 16px
+  &-Arrow
+    display: inline-block
+    vertical-align: middle
+    width: 20px
+    height: 20px
+    background: url(../../files/icons/select-arrow.svg) center no-repeat
+
+@keyframes HeaderSaved
+  from
+    opacity: 1
+  90%
+    opacity: .5
+  to
+    opacity: 0
+
+
+
+

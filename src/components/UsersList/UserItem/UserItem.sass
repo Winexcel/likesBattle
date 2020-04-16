@@ -1,0 +1,122 @@
+.UserItem
+  position: relative
+  margin-top: 19px
+  margin-bottom: 19px
+  overflow: hidden
+  &-ImgError
+    position: relative
+    width: 50%
+    height: 50%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-image: url(../../../files/icons/img-error.svg)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: 50%
+  &-Number
+    display: inline-block
+    margin-right: 16px
+    font-size: 14px
+    color: #535353
+    opacity: .6
+    width: 40px
+    text-align: right
+  &-Avatar
+    display: inline-block
+    vertical-align: middle
+    width: 50px
+    height: 50px
+    border: 1px solid #fff
+    border-radius: 50%
+    object-fit: cover
+    &Error
+      background-color: #FFF
+      background-image: url(../../../files/icons/img-error.svg)
+      background-position: center center
+      background-repeat: no-repeat
+      background-size: 50%
+    &Preloader
+      background: white
+      background-image: url(../../../files/icons/preloader-icon.svg)
+      background-position: center center
+      background-size: 43%
+      background-repeat: no-repeat
+  &-Info
+    display: inline-block
+    vertical-align: middle
+    margin-left: 17px
+  &-Name
+    display: block
+    font-size: 18px
+    color: #535353
+    margin-bottom: 3px
+    &Line
+      display: inline-block
+      width: 91px
+      height: 20px
+      background: white
+      border-radius: 20px
+  &-AdditionalInfo
+    display: block
+    font-size: 13px
+    color: darken(#575757, 50)
+    font-weight: 100
+    &Line
+      width: 60px
+      height: 11px
+      background: white
+      border-radius: 20px
+      margin-left: 2px
+  &-ButtonWrapper
+    display: inline-block
+    position: absolute
+    box-sizing: border-box
+    top: 0
+    right: 0
+    height: 100%
+    /* ширина специально для айфонов */
+    //width: 114px
+    padding: 8px 0
+  &-ButtonOpen
+    //right: 0
+    height: 100%
+    border: none
+    outline: none
+    padding: 0 17px
+    color: #fff
+    background: #f96f7f
+    font-size: 12px
+    font-weight: 500
+    border-radius: 1px
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-left: 9px
+      width: 13px
+      height: 18px
+      background-image: url(../../../files/icons/locked.svg)
+      background-position: center
+      background-repeat: no-repeat
+  &-ButtonGo
+    //right: 0
+    height: 100%
+    border: none
+    outline: none
+    padding: 0 17px
+    color: #535353
+    background: #fdfefe
+    font-size: 12px
+    font-weight: 500
+    border-radius: 1px
+    &:after
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      margin-left: 14px
+      width: 9px
+      height: 12px
+      background-image: url(../../../files/icons/go.svg)
+      background-position: center
+      background-repeat: no-repeat

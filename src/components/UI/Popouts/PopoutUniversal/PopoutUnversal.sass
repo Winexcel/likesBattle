@@ -1,0 +1,67 @@
+.PopoutUniversal
+  position: relative
+  border-radius: 12px
+  box-sizing: border-box
+  width: 98%
+  max-width: 400px
+  background: #fff
+  padding-top: 34px
+  &-Icon
+    display: block
+    margin: auto
+  &-HeaderText
+    display: block
+    text-align: center
+    font-size: 18px
+    font-weight: 500
+    color: #575757
+    margin-top: 16px
+  &-Text
+    display: block
+    margin-top: 17px
+    color: #575757
+    opacity: .8
+    padding: 0px 17px
+  &-Button
+    padding: 17px 0px
+    &_circleEffect
+      position: relative
+      overflow: hidden
+      &:after
+        content: ""
+        position: absolute
+        width: 0
+        height: 0
+        top: 50%
+        left: 50%
+        transform-style: flat
+        transform: translate(-50%,-50%)
+        background: rgba(#FFF, .1)
+        border-radius: 100%
+        transition: width .2s ease, height .2s ease
+      &:active
+        background: darken(#FB7180,7%)
+        &:after
+          width: 100%
+          height: 1000%
+    &Primary
+      outline: none
+      border: none
+      color: #fff
+      font-weight: 500
+      font-size: 16px
+      background: #FB7180
+      border-radius: 1px
+      padding: 16px 42px
+
+
+    &Single
+      display: block
+      width: 100%
+  &-Buttons
+    &Container
+      display: block
+      margin-top: 35px
+      padding: 0px 17px
+      margin-bottom: 17px
+

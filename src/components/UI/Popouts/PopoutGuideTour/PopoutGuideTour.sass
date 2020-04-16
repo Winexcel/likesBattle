@@ -1,0 +1,69 @@
+.PopoutGuideTour
+  position: relative
+  display: block
+  padding-top: 16px
+  padding-left: 14px
+  padding-right: 14px
+  background: linear-gradient(180deg, #ED4991 0%, #FB4E5F 100%)
+  border-radius: 5px
+  text-align: center
+  margin-top: 40%
+  &-Text
+    font-size: 14px
+    color: #fff
+    font-weight: 500
+    margin-top: 8px
+    margin-bottom: 58px
+  &-Button
+    cursor: pointer
+    font-size: 14px
+    font-weight: bold
+    color: #fff
+    outline: none
+    border: none
+    width: 100%
+    background: linear-gradient(180deg, #DF4562 0%, #E24656 100%)
+    border-radius: 0px 0px 5px 5px
+    padding: 10px 0px
+    position: absolute
+    left: 0px
+    bottom: 0px
+
+.Stepper
+  &-Counter
+    color: #fff
+    font-weight: bold
+    font-size: 10px
+    vertical-align: middle
+    &Wrap
+      position: relative
+      display: inline-block
+      padding: 4px 7px
+      border-radius: 3px
+      &Bg
+        position: absolute
+        left: 0
+        top: 0
+        background: #000000
+        opacity: 0.05
+        border-radius: 3px
+        width: 100%
+        height: 100%
+        background: green
+  &-ProgressBar
+    display: inline-block
+    width: 82px
+    height: 9px
+    background: #EF4989
+    border: 1px solid #FFFFFF
+    box-sizing: border-box
+    border-radius: 100px
+    &Step
+      margin-left: -1px
+      width: 27px
+      height: 100%
+      background: #FFFFFF
+      border-radius: 5px 0px 0px 5px
+      transition: all 0.5s ease-in
+    &_marginLeft
+      margin-left: 8px

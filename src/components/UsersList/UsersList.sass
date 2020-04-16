@@ -1,0 +1,125 @@
+.UsersList
+  &-List
+    width: 100%
+    background: #f6f7fb
+    margin: 0
+    overflow: hidden
+    padding: 0 27px
+    list-style: none
+    &_counted
+      padding-left: 0px
+    &Wrapper
+      display: flex
+      justify-content: center
+      margin: auto
+      max-width: 500px
+      &Bg
+        min-height: 200px
+        background: var(--background_page)
+  &-Item
+  &-Message
+    margin-top: 20px
+    max-width: 345px
+  &-Header
+    display: flex
+    z-index: 2
+    margin: 0
+    padding: 0
+    list-style: none
+    height: 63px
+    justify-content: space-between
+    align-items: center
+    background: #fff
+    color: #535353
+    &Link
+      display: block
+      text-decoration: none
+      border: none
+      background: none
+      width: 100%
+      height: 100%
+      outline: none
+      color: #535353
+      cursor: pointer
+      &:visited
+        color: #535353
+        text-decoration: none
+      &:focus
+        outline: none
+      &_active
+        font-size: 14px
+        font-weight: 500
+        &:after
+          content: ''
+          display: block
+          width: 30px
+          position: relative
+          bottom: -8px
+          height: 1.5px
+          background: #F84D6A
+          border-radius: 100px
+          margin: 0 auto
+    &Item
+      font-size: 13px
+      flex-grow: 1
+      display: block
+      height: 100%
+      text-align: center
+      line-height: 63px
+
+.View--ios .UsersList-Header
+  position: sticky
+  top: calc(44px + env(safe-area-inset-top))
+
+.View--android .UsersList-Header
+  position: sticky
+  top: 56px
+
+.Message
+  display: inline-block
+  padding: 28px 30px
+  background: #FFFFFF
+  box-shadow: inset 0px 0px 5px #E1E5F1
+  border-radius: 1px
+  font-weight: 500
+  color: #535353
+  font-size: 14px
+  text-align: center
+  line-height: 19px
+  &-Link
+    outline: none
+    background: none
+    border: none
+    font-weight: 500
+    font-size: 14px
+    color: #F94D63
+    padding: 0
+    cursor: pointer
+    text-decoration: underline
+
+
+/* IPhone 5 */
+@media only screen and (max-width : 390px)
+  .UserItem
+    //&-ButtonWrapper
+    //  padding: 3px 0
+    &-Name
+      font-size: 15px
+
+@media only screen and (max-width : 370px)
+  .UsersList
+    &-List
+      padding: 0 20px
+      &_counted
+        padding-left: 0px
+
+@media only screen and (max-width : 350px)
+  .UserItem
+    &-Number
+      margin-right: 10px
+    &-Info
+      margin-left: 10px
+    &-Name
+      font-size: 14px
+    &-ButtonOpen, &-ButtonGo
+      transform: scale(0.9) translateX(6px)

@@ -1,0 +1,39 @@
+.NumberInput
+  display: inline-block
+  box-sizing: border-box
+  background: #fff
+  font-weight: 500
+  height: 35px
+  box-sizing: border-box
+  overflow: hidden
+  &-Minus, &-Plus
+    box-sizing: border-box
+    height: 35px
+    width: 32px
+    background: #fff
+    font-size: 15px
+    outline: none
+    border: none
+    color: #000
+  &-Minus:before
+    content: '-'
+  &-Plus:before
+    content: '+'
+  &-Input
+    box-sizing: border-box
+    height: 35px
+    text-align: center
+    font-size: 16px
+    font-weight: 500
+    width: 44px
+    line-height: 35px
+    font-size: 16px
+    color: #575757
+    border: none
+    outline: none
+    user-select: all
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+
